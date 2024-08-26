@@ -1,0 +1,13 @@
+#menu-item ul li a{
+font-size: 16px;
+font-weight: 500;
+line-height: 18.78px;
+text-align: left;
+color: white;
+padding: 2px 0px;
+}
+
+#menu-item ul li:hover{
+    border-bottom: 1px solid white;
+ }
+

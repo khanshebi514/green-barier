@@ -2,32 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.font-raleway{
+  font-family: "Raleway", sans-serif !important;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
+  font-family: "Raleway", sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .main-heading{
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-[80px] lg:leading-[93.92px] font-[700] md:font-[900]
+  }
+
+  .medium-heading{
+    @apply text-3xl sm:text-4xl md:text-6xl font-bold
+  }
+
+  .links-text{
+    @apply text-[1rem] font-[500] leading-[18.78px]
+  }
+  .paragraph-text{
+    @apply text-[16px] md:text-[18px] lg:text-[20px] leading-[25px] md:leading-[30px] lg:leading-[35px] font-[400]
+  }
+}
+
+.bg-primary{
+    background: #317CC6;
+}
+.bg-primary-gradient {
+  background: linear-gradient(125.28deg, #0EA1EF 0%, #064BCA 100%);
+}
+
+.silver{
+  background: #CFEAFB;
+}
+
+.drop-shadow {
+  box-shadow: 0px 4px 50px 0px #00000014;
+}
+.container {
+ max-width: 1600px;
+ margin: auto;
+ padding: 10px !important;
+}
+
+
+@media  (min-width : 1060px) {
+ 
+  #contact-us-col{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media  (max-width : 1060px) {
+ 
+  #contact-us{
+    background-color: #317CC6;
+  }
+  #contact-us-col{
+
+  }
+}
+@media  (max-width : 760px) {
+  #hero-section{
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-blend-mode: overlay !important;
+    background-color:#0EA1EF !important;
+  }
+}
+
+@media  (max-width : 560px) {
+  #hero-section{
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-blend-mode: overlay !important;
+    background-color:#0EA1EF !important;
   }
 }
