@@ -1,56 +1,62 @@
 export const IMAGE_URL = [
     {
         key:'1',
-        ImageUrl:'/slider/work-1 (1).jpg',
-        content : "lorem ispust text that is not doing wel"
+        ImageUrl:'/slider/deg-3.png',
+        content : "lorem ispust text that is not doing wel",
+        heading:"Data Scintest"
     },
 
     {
         key:'2',
-        ImageUrl:'/slider/work-1 (2).jpg',
-        content : "lorem ispust text that is not doing wel"
+        ImageUrl:'/slider/digital-asset-1.png',
+        content : "lorem ispust text that is not doing wel",
+        heading:"Data & Analytics"
     },
 
     {
         key:'3',
-        ImageUrl:'/slider/work-1 (3).jpg',
-        content : "lorem ispust text that is not doing wel"
+        ImageUrl:'/slider/digital-asset-2.png',
+        content : "lorem ispust text that is not doing wel",
+        heading:"software Engineer"
     },
 
     {
         key:'4',
-        ImageUrl:'/slider/work-1 (4).jpg',
-        content : "lorem ispust text that is not doing wel"
+        ImageUrl:'/slider/deg-3.png',
+        content : "lorem ispust text that is not doing wel",
+        heading:"Civil Engineer"
     },
     {
         key:'5',
-        ImageUrl:'/slider/work-1 (1).jpg',
-        content : "lorem ispust text that is not doing wel"
+        ImageUrl:'/slider/digital-asset-1.png',
+        content : "lorem ispust text that is not doing wel",
+        heading:"Data Analytics"
     },
     {
         key:'6',
-        ImageUrl:'/slider/work-1 (2).jpg',
-        content : "lorem ispust text that is not doing wel"
+        ImageUrl:'/slider/deg-3.png',
+        content : "lorem ispust text that is not doing wel",
+        heading:"Data Analytics"
     }
 ]
 
 export const profile = [
     {
         key:'1',
-        ImageUrl:'/profile/profile-1.jpg',
-        name:"M. Shoiab",
+        ImageUrl:'/profile/profile-2.png',
+        name:"Scott Blanchette ",
         content : "lorem ispust text that is not doing wel"
     },
     {
         key:'2',
-        ImageUrl:'/profile/profile-2.jpg',
-        name:"M.Amir Khan",
+        ImageUrl:'/profile/profile-11.png',
+        name:"Norbert Thomas",
         content : "lorem ispust text that is not doing wel"
     },
     {
         key:'3',
         ImageUrl:'/profile/profile-3.png',
-        name:"M. Faisal",
+        name:"Ralph Worthington",
         content : "lorem ispust text that is not doing wel"
     },
 ]

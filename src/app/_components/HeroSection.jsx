@@ -27,7 +27,7 @@ export default function HeroSection() {
       </div>
       <div className="container flex justify-center items-center flex-col gap-5 h-full z-20 relative">
         <div>
-          <h1 className="main-heading text-center text-white">
+          <h1 className="main-heading text-center text-white capitalize">
             A strong <br />
             strategy for your business
           </h1>

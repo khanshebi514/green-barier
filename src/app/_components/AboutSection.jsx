@@ -22,14 +22,16 @@ export default function AboutSection() {
           </div>
 
           <div className="right-section relative">
-            <div className="absolute w-[290px] h-[244px] rounded-[20px] bg-primary-gradient opacity-20 -z-10 hidden lg:block">
+            <div className="absolute w-[290px] h-[244px] rounded-[20px] bg-primary-gradient opacity-20 -z-10 hidden lg:block"></div>
+            <Image
+              src="/home/Rectangle 5.png"
+              width={603}
+              height={619}
+              alt="titile"
+              className="w-full h-full object-cover"
+            />
 
-            </div>
-            <Image src="/home/Rectangle 5.png" width={603} height={619} alt="titile" className="w-full h-full object-cover"/>
-
-            <div className="absolute w-[290px] h-[244px] rounded-[20px] bg-primary-gradient opacity-20 -z-10 top-[60%] left-[55%] hidden lg:block">
-
-            </div>
+            <div className="absolute w-[290px] h-[244px] rounded-[20px] bg-primary-gradient opacity-20 -z-10 top-[60%] left-[55%] hidden lg:block"></div>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 export default function Navbar() {
   return (
-    <header className="bg-primary py-2 drop-shadow">
+    <header className="bg-[#2e79b9] py-2 drop-shadow">
       <div className="container">
         <nav className="flex justify-between items-center">
           <div>

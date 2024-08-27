@@ -11,7 +11,6 @@ export default function CapitalStructure() {
         backgroundPosition: "top",
         backgroundRepeat: "no-repeat",
         backgroundPositionY: "-10%",
-        
       }}
     >
       <div className="container">
@@ -107,16 +106,24 @@ export default function CapitalStructure() {
           />
         </div>
         <div className="container absolute top-[70%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
-            <div className="flex justify-center items-center flex-col">
-                <h1 className="medium-heading text-white">People</h1>
-                <p className="peragraph-text text-white mt-5 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br /> Lorem Ipsum has been </p>
-            </div>
+          <div className="flex justify-center items-center flex-col">
+            <h1 className="medium-heading text-white">People</h1>
+            <p className="peragraph-text text-white mt-5 text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. <br /> Lorem Ipsum has been{" "}
+            </p>
+          </div>
 
-            <div className="flex justify-center items-center gap-[150px] my-[100px] flex-wrap">
-                {profile.map((item)=> 
-                <ProfileCard key={item.key} name={item.name} imageUrl={item.ImageUrl} content={item.content}/>
-                )}
-            </div>
+          <div className="flex justify-center items-center gap-[150px] my-[100px] flex-wrap">
+            {profile.map((item) => (
+              <ProfileCard
+                key={item.key}
+                name={item.name}
+                imageUrl={item.ImageUrl}
+                content={item.content}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

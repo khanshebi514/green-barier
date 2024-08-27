@@ -10,14 +10,13 @@ import {
 } from "react-icons/fa";
 import { MdEmail, MdInbox } from "react-icons/md";
 import { FaFacebookF } from "react-icons/fa";
-import Link from "next/link";
-import { Button } from "semantic-ui-react";
+import LinkUi from "../ui/LinkUI";
 export default function Footer() {
   return (
-    <footer className="bg-[black]">
-      <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-5">
-          <div className="flex items-start md:justify-around gap-[80px] flex-wrap">
+    <footer className="bg-[black] overflow-hidden">
+      <div className="container ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-10 gap-10 justify-items-start relative">
+          
             <div className="space-y-5">
               <Image
                 src={"/navbar/logo-img.png"}
@@ -36,133 +35,91 @@ export default function Footer() {
               </div>
 
               <div className="flex items-center gap-2">
-                <FaFacebookF size={20} className="text-white" />
-                <FaInstagram size={20} className="text-white" />
-                <FaTwitter size={20} className="text-white" />
-                <FaLinkedin size={20} className="text-white" />
-                <FaYoutube size={20} className="text-white" />
-                <FaPinterest size={20} className="text-white" />
+                <FaFacebookF size={20} className="text-white cursor-pointer" />
+                <FaInstagram size={20} className="text-white cursor-pointer" />
+                <FaTwitter size={20} className="text-white cursor-pointer" />
+                <FaLinkedin size={20} className="text-white cursor-pointer" />
+                <FaYoutube size={20} className="text-white cursor-pointere" />
+                <FaPinterest size={20} className="text-white cursor-pointer" />
               </div>
-              <div className="hidden">
-                 <div className="w-[374px] h-[66px] border-2 border-[#ffffff] flex items-center justify-between px-3"><input  type="text" placeholder="Enter Your Email" className="px-1 py-2 outline-none border-none bg-transparent text-white"/>
-                 <button className="w-[40px] h-[40px] bg-gradient-to-tr from-[#0EA1EF] to-[#064BCA] drop-shadow flex justify-center items-center rounded"> <FaArrowRightLong size={18} className="text-white"/> </button>
-                 </div>
+              <div className="">
+                <div className="w-full h-[64px] border-2 border-[#ffffff] flex items-center justify-between px-3">
+                  <input
+                    type="text"
+                    placeholder="Enter Your Email"
+                    className="px-1 py-2 outline-none border-none bg-transparent text-white w-full"
+                  />
+                  <button className="w-[40px] h-[40px] bg-gradient-to-tr from-[#0EA1EF] to-[#064BCA] drop-shadow flex justify-center items-center rounded">
+                    {" "}
+                    <FaArrowRightLong size={18} className="text-white" />{" "}
+                  </button>
+                </div>
               </div>
             </div>
             <div className="space-y-3">
               <h3 className="text-white font-[600] text-[20px]">Expertise</h3>
-              <ul className="flex flex-col list-disc space-y-5">
-                <li className="text-white">
-                  <a className="text-white " href="/strategic-planning">
-                    Strategic Planning
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                    Performance Improvement
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                    Digital Transformation
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                    Data & Analytics
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/innovation">
-                    Innovation
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/technology-services-cloud">
-                    Technology Services & Cloud
-                  </a>
-                </li>
+              <ul className="flex flex-col !list-disc space-y-5 mt-3">
+                <LinkUi path="/strategic-planning" label="Strategic Planning" />
+                <LinkUi
+                  path="/strategic-planning"
+                  label="Performance Improvement"
+                />
+                <LinkUi
+                  path="/strategic-planning"
+                  label="Digital Transformation"
+                />
+                <LinkUi path="/strategic-planning" label="Data & Analytics" />
+                <LinkUi path="/strategic-planning" label="Innovation" />
+                <LinkUi
+                  path="/strategic-planning"
+                  label="Technology Services & Cloud"
+                />
               </ul>
             </div>
-          </div>
+          
 
-          <div className="flex gap-5 md:gap-0 md:justify-around items-start flex-wrap">
+          
             <div className="space-y-3">
-              <h3 className="text-white font-[600] text-[20px]">Capital Structure</h3>
-              <ul className="flex flex-col list-disc space-y-5">
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                  Public Companies
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                  Private Equity
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                  Venture Capital
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                  Federal & State Government
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/innovation">
-                  Academia & Non-Profits
-                  </a>
-                </li>
-
+              <h3 className="text-white font-[600] text-[20px]">
+                Capital Structure
+              </h3>
+              <ul className="flex flex-col !list-disc space-y-5 mt-3">
+                <LinkUi path="/strategic-planning" label="Public Companies" />
+                <LinkUi path="/strategic-planning" label="Private Equity" />
+                <LinkUi path="/strategic-planning" label="Venture Capital" />
+                <LinkUi
+                  path="/strategic-planning"
+                  label="Federal & State Government"
+                />
+                <LinkUi
+                  path="/strategic-planning"
+                  label="Academia & Non-Profits"
+                />
               </ul>
             </div>
 
             <div className="space-y-3">
-              <h3 className="text-white font-[600] text-[20px]">Useful Links</h3>
-              <ul className="flex flex-col list-disc space-y-5">
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                  About Us
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                  Careers
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                  Terms & conditions
-                  </a>
-                </li>
-
-                <li className="text-white">
-                  <a className="text-white" href="/strategic-planning">
-                  Careers
-                  </a>
-                </li>
-
+              <h3 className="text-white font-[600] text-[20px]">
+                Useful Links
+              </h3>
+              <ul className="flex flex-col !list-disc space-y-5 mt-3">
+                <LinkUi path="/strategic-planning" label="About Us" />
+                <LinkUi path="/strategic-planning" label="Careers" />
+                <LinkUi path="/strategic-planning" label="Terms & conditions" />
+                <LinkUi path="/strategic-planning" label="Careers" />
+                <LinkUi path="/strategic-planning" label="Careers" />
               </ul>
             </div>
+          <div className="absolute w-[200px] h-[200px] top-10 -right-20 opacity-40">
+            <Image src={"/home/Group 124.png"} fill alt="data driven tools"/>
           </div>
         </div>
       </div>
       <div className="w-full h-[1px] bg-[#ffffff10] my-5"></div>
       <div className="block md:flex justify-center items-center p-5">
-        <p className="text-center text-white text-wrap">© 2022 Company Name. All rights reserved. </p>
+        <p className="text-center text-white text-wrap">
+          © 2022 Company Name. All rights reserved.{" "}
+        </p>
       </div>
     </footer>
   );

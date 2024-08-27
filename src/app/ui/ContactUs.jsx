@@ -37,7 +37,7 @@ export default function ContactUs() {
               label={"Email"}
               id={"email"}
               type={"text"}
-              placeholder={"Enter Your Email: "}
+              placeholder={"Enter Your Email:"}
             />
           </div>
 
