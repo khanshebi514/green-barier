@@ -104,7 +104,7 @@ export default function CapitalStructure() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-[20px] md:gap-[30px] lg:gap-[80px] my-[100px]">
+          <div className="flex justify-center gap-[20px] md:gap-[30px] lg:gap-[80px] my-[100px] flex-wrap md:flex-nowrap">
             {profile.map((item) => (
               <ProfileCard
                 key={item.key}
