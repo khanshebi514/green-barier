@@ -23,7 +23,7 @@ export default function IndustriesSection() {
           ))}
         </div>
       </div>
-      <div className="w-full absolute -top-[15%] hidden lg:block">
+      <div className="w-full absolute -top-[15%] hidden">
         <Image src={"/home/Group.png"} width={2100} height={1000} alt="" />
       </div>
     </section>

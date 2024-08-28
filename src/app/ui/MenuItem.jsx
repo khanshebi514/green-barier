@@ -4,7 +4,7 @@ import './main-ui.css'
 export default function MenuItem() {
   return (
     <menu id="menu-item">
-      <ul className="w-[1022px] flex justify-center items-center gap-[55px]">
+      <ul className="w-[800px] xl:w-[1022px] flex justify-center items-center gap-[15px] xl:gap-[55px]">
         <li>
           <a href="home">Home</a>
         </li>

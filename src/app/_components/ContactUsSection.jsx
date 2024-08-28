@@ -4,25 +4,15 @@ import { ImLocation2 } from "react-icons/im";
 
 export default function ContactUsSection() {
   return (
-    <section id="contact-us" className="static lg:relative mt-[100px]">
-      <Image
-        src="/home/contact-us-bg.png"
-        width={2000}
-        height={1200}
-        alt="alt"
-        className="w-full h-full hidden lg:block"
-      />
-      <div className="absolute w-full h-full top-0 left-0 hidden lg:block">
-        <Image
-          src="/home/Vector-212.png"
-          width={2000}
-          height={1200}
-          alt="alt"
-          className="w-full h-full"
-        />
-      </div>
-      <div id="contact-us-col" className="container static">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <section id="contact-us" className="static lg:relative mt-[100px] py-[100px]"
+    style={{
+      background:"url('/bg-121.png')",
+      backgroundRepeat:'no-repeat',
+      objectFit:"cover"
+    }}
+    >
+      <div id="contact-us-col" className="container">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 align-top">
           <div className="mt-10 mb-[30px] md:mb-[100px]">
             <ContactUs />
           </div>

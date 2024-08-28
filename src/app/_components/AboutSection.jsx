@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="mt-[50px] md:mt-[200px] lg:mt-[250px]">
+    <section className="mt-[50px]">
       <div className="container p-5 md:p-3 lg:p-1">
         <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center place-items-center">
           <div className="left-section">
@@ -21,7 +21,7 @@ export default function AboutSection() {
             </p>
           </div>
 
-          <div className="right-section relative">
+          <div className="right-section relative overflow-hidden">
             <div className="absolute w-[290px] h-[244px] rounded-[20px] bg-primary-gradient opacity-20 -z-10 hidden lg:block"></div>
             <Image
               src="/home/Rectangle 5.png"

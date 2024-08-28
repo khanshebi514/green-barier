@@ -69,15 +69,18 @@ body {
 @media  (min-width : 1060px) {
  
   #contact-us-col{
-    position: absolute;
+    /* position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
   }
 }
 
 @media  (max-width : 1060px) {
- 
+
+  #hero-section{
+  
+  }
   #contact-us{
     background-color: #317CC6;
   }
@@ -85,22 +88,35 @@ body {
 
   }
 }
-@media  (max-width : 760px) {
+
+@media  (max-width : 768px) {
   #hero-section{
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-blend-mode: overlay !important;
-    background-color:#0EA1EF !important;
+
+  }
+
+  #contact-us{
+    background-color: #317CC6 !important;
+    background-image: none !important;
+  }
+  #profile-section{
+    background-color: #317CC6 !important;
+    background-image: none !important;
   }
 }
 
 @media  (max-width : 560px) {
   #hero-section{
     background-size: cover !important;
-    background-position: center !important;
     background-repeat: no-repeat !important;
-    background-blend-mode: overlay !important;
-    background-color:#0EA1EF !important;
+   
+    
+  }
+  #contact-us{
+    background-color: #317CC6 !important;
+    background-image: none !important;
+  }
+  #profile-section{
+    background-color: #317CC6 !important;
+    background-image: none !important;
   }
 }

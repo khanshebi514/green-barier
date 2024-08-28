@@ -11,7 +11,6 @@ import Footer from './Footer'
 export default function HomeSection() {
   return (
     <>
-    <Navbar/>
     <HeroSection/>
     <AboutSection/>
     <ExpertiseSection/>

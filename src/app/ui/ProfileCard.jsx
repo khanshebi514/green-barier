@@ -6,8 +6,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export default function ProfileCard({ name, imageUrl, content }) {
   return (
-    <div className="w-[250px] h-[332px] flex flex-col items-center gap-5">
-      <div className="w-[250px] h-[250px] rounded-full relative">
+    <div className="w-[200px] h-[300px] lg:w-[250px] lg:h-[332px] flex flex-col items-center gap-5">
+      <div className="w-[200px] h-[200px] lg:w-[250px] lg:h-[250px] rounded-full relative">
         <Image
           src={imageUrl}
           fill
@@ -20,7 +20,7 @@ export default function ProfileCard({ name, imageUrl, content }) {
       </div>
       <div>
         <div className="">
-        <p className="text-[20px] font-[700] opacity-80 text-white px-5">{name}</p>
+        <p className="text-[14px] md:text-[20px] font-[700] opacity-80 text-white px-5">{name}</p>
         </div>
         
         <div className="flex justify-center items-center gap-2 mt-3">

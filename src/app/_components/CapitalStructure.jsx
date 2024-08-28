@@ -5,7 +5,7 @@ import { profile } from "../constants/constant";
 export default function CapitalStructure() {
   return (
     <section
-      className="mt-[100px]"
+      className="mt-[50px]"
       style={{
         background: "url('/home/Vector-8.png')",
         backgroundPosition: "top",
@@ -17,7 +17,7 @@ export default function CapitalStructure() {
         <div className="grid grid-cols-1 md:grid-cols-[40%_60%] justify-items-center place-items-center">
           <div className="">
             <h1 className="medium-heading">Capital Structure</h1>
-            <p className="peragraph-text mt-10">
+            <p className="peragraph-text mt-2 md:mt-7 lg:mt-10 mb-5">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -35,7 +35,7 @@ export default function CapitalStructure() {
                   alt="title image"
                 />
                 <div className="w-full h-full opacity-0 hover:opacity-100 absolute top-0 left-0 flex justify-center items-center text-white transition-all bg-[#00000044] rounded-3xl">
-                  <p>
+                  <p className="text-[14px] md:text-[16px] text-center px-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
                   </p>
                 </div>
@@ -50,7 +50,7 @@ export default function CapitalStructure() {
                 />
 
                 <div className="w-full h-full opacity-0 hover:opacity-100 absolute top-0 left-0 flex justify-center items-center text-white transition-all bg-[#00000044] rounded-3xl">
-                  <p className="text-center">
+                  <p className="text-[14px] md:text-[16px] text-center px-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
                   </p>
                 </div>
@@ -66,7 +66,7 @@ export default function CapitalStructure() {
                   alt="title image"
                 />
                 <div className="w-full h-full opacity-0 hover:opacity-100 absolute top-0 left-0 flex justify-center items-center text-white transition-all bg-[#00000044] rounded-3xl">
-                  <p className="text-center">
+                  <p className="text-[14px] md:text-[16px] text-center px-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
                   </p>
                 </div>
@@ -79,7 +79,7 @@ export default function CapitalStructure() {
                   alt="title image"
                 />
                 <div className="w-full h-full opacity-0 hover:opacity-100 absolute top-0 left-0 flex justify-center items-center text-white transition-all bg-[#00000044] rounded-3xl">
-                  <p className="text-center">
+                  <p className="text-[14px] md:text-[16px] text-center px-2">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
                   </p>
                 </div>
@@ -88,33 +88,23 @@ export default function CapitalStructure() {
           </div>
         </div>
       </div>
-      <div className="h-screen relative hidden lg:block">
-        <Image
-          src="/home/Vector-9.png"
-          width={2000}
-          height={1200}
-          alt="alt"
-          className="w-full h-full"
-        />
-        <div className="absolute w-full h-full top-0 left-0">
-          <Image
-            src="/home/people-bg.png"
-            width={2000}
-            height={1200}
-            alt="alt"
-            className="w-full h-full"
-          />
-        </div>
-        <div className="container absolute top-[70%] left-[50%] transform -translate-x-1/2 -translate-y-1/2">
-          <div className="flex justify-center items-center flex-col">
-            <h1 className="medium-heading text-white">People</h1>
+      <div
+      id="profile-section"
+        style={{
+          background: "url('bg-121.png')",
+          backgroundRepeat:'no-repeat'
+        }}
+      >
+        <div className="container">
+          <div className="flex justify-center items-center flex-col mt-[20px] md:mt-[80px] lg:mt-[150px]">
+            <h1 className="medium-heading text-white mt-3 md:mt-10">People</h1>
             <p className="peragraph-text text-white mt-5 text-center">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. <br /> Lorem Ipsum has been{" "}
             </p>
           </div>
 
-          <div className="flex justify-center items-center gap-[150px] my-[100px] flex-wrap">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-[20px] md:gap-[30px] lg:gap-[80px] my-[100px]">
             {profile.map((item) => (
               <ProfileCard
                 key={item.key}

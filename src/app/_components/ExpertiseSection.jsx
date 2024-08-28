@@ -5,8 +5,8 @@ export default function ExpertiseSection() {
   return (
     <section className="mt-[50px] md:mt-[100px] lg:mt-[250px]">
         <div className="container relative">
-            <div className="absolute -top-[150px] -left-10 hidden lg:block">
-                <Image src={"/home/Group 124.png"} width={488} height={492}/>
+            <div className="absolute -top-[70%] -left-[10%] hidden lg:block w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[488px] xl:h-[488px]">
+                <Image src={"/home/Group 124.png"} fill/>
             </div>
 
             <div className="text-center w-full">
@@ -14,7 +14,7 @@ export default function ExpertiseSection() {
                 <p className="peragraph-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br /> Lorem Ipsum has been </p>
             </div>
         </div>
-        <div className="w-full relative overflow-hidden" style={{
+        <div className="w-full relative" style={{
               background:"url('/home/Rectangle 37.png')",
               backgroundPosition:"center bottom",
               objectFit:"cover",
@@ -22,12 +22,10 @@ export default function ExpertiseSection() {
             }}>
             
             <div className="container">
-            <div className="w-full my-[200px]">
+            <div className="w-full py-[100px] lg:py-[100px] overflow-hidden overflow-y-visible">
                 <Imageslide/>
             </div>
             </div>
-            
-
             </div>
     </section>
   )

@@ -6,6 +6,7 @@ import { GoDot } from "react-icons/go";
 import { GoDotFill } from "react-icons/go";
 import { MdNavigateNext } from "react-icons/md";
 
+
 export default function Imageslide() {
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -24,13 +25,13 @@ export default function Imageslide() {
     } else {
       setImageIndex(3);
     }
-  }
+  };
 
   return (
     <>
       <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center items-center gap-5 overflow-y-visible">
-          <div className="w-[150px] h-[150px] md:w-[300px] md:h-[300px] border-[12px] border-white drop-shadow-lg overflow-hidden object-cover rotate-45 rounded-3xl cursor-pointer">
+          <div className="w-[150px] h-[150px] lg:w-[230px] lg:h-[230px] xl:w-[300px] xl:h-[300px] border-[12px] border-white drop-shadow-lg overflow-hidden object-cover rotate-45 rounded-3xl cursor-pointer">
             <Image
               src={imageUrl[imageIndex].ImageUrl}
               width={700}
@@ -50,7 +51,7 @@ export default function Imageslide() {
             </div>
           </div>
 
-          <div className="w-[200px] h-[200px] md:w-[500px] md:h-[500px] border-[12px] border-white drop-shadow-lg object-cover rotate-45 overflow-hidden z-10 rounded-3xl cursor-pointer">
+          <div className="w-[200px] h-[200px] lg:w-[400px] lg:h-[400px] xl:w-[500px]  xl:h-[500px] border-[12px] border-white drop-shadow-lg object-cover rotate-45 overflow-hidden z-10 rounded-3xl cursor-pointer">
             <Image
               src={imageUrl[imageIndex + 1].ImageUrl}
               fill
@@ -60,7 +61,7 @@ export default function Imageslide() {
             />
             <div className="w-full h-full -rotate-45 absolute top-0 left-0 bg-[#00000062] flex justify-center items-center scale-150 opacity-0 hover:opacity-100 flex-col gap-3">
               <h3 className="text-lg font-bold text-white">
-                {imageUrl[imageIndex +1 ].heading}
+                {imageUrl[imageIndex + 1].heading}
               </h3>
               <p className="text-center text-[14px] text-white">
                 {imageUrl[imageIndex + 1].content}
@@ -68,17 +69,17 @@ export default function Imageslide() {
             </div>
           </div>
 
-          <div className="w-[150px] h-[150px] md:w-[300px] md:h-[300px] border-[12px] border-white drop-shadow-lg object-cover rotate-45 overflow-hidden rounded-3xl cursor-pointer">
+          <div className="w-[150px] h-[150px] lg:w-[230px] lg:h-[230px] xl:w-[300px] xl:h-[300px] border-[12px] border-white drop-shadow-lg object-cover rotate-45 overflow-hidden rounded-3xl cursor-pointer">
             <Image
               src={imageUrl[imageIndex + 2].ImageUrl}
-             fill
+              fill
               quality={100}
               alt=""
               className="w-full object-cover scale-150 h-full -rotate-45"
             />
             <div className="w-full h-full -rotate-45 absolute top-0 left-0 bg-[#00000062] flex justify-center items-center scale-150 opacity-0 hover:opacity-100 flex-col gap-3">
               <h3 className="text-lg font-bold text-white">
-                {imageUrl[imageIndex +2 ].heading}
+                {imageUrl[imageIndex + 2].heading}
               </h3>
               <p className="text-center text-[12px] text-white">
                 {imageUrl[imageIndex + 2].content}
