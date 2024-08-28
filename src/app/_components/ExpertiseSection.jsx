@@ -22,7 +22,7 @@ export default function ExpertiseSection() {
             }}>
             
             <div className="container">
-            <div className="w-full py-[100px] lg:py-[100px] overflow-hidden overflow-y-visible">
+            <div className="w-full py-[100px] lg:py-[200px] overflow-hidden overflow-y-visible">
                 <Imageslide/>
             </div>
             </div>
